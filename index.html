@@ -2,7 +2,9 @@
   <head>
     <title>Eyuel</title>
     <style type="text/css">
-      body { background-color: #afd496; }
+      html, body { background-color: #afd496; height: 100%; }
+      .container { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; }
+      .centered-item { display: flex; flex-direction: column; align-items: center; }
       .profile-pic { height: 100px; width: 100px; border-radius: 50%; padding: 5px; background-color: lightgray; }
       .profile-pic img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
       .title { font-size: 50px; font-family: "Gill Sans", sans-serif; }
@@ -10,14 +12,18 @@
     </style>
   </head>
   <body>
-    <div class="profile-pic">
-      <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/slightly-smiling-face_1f642.png" alt="profile pic" />
-    </div>
-    <div class="title">
-      <span>Eyuel Tessema</span>
-    </div>
-    <div class="about-me">
-      <span>I have a website.</span>
+    <div class="container">
+      <div class="centered-item">
+        <div class="profile-pic">
+          <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/slightly-smiling-face_1f642.png" alt="profile pic" />
+        </div>
+        <div class="title">
+          <span>Eyuel Tessema</span>
+        </div>
+        <div class="about-me">
+          <span>This is a website.</span>
+        </div>
+      </div>
     </div>
   </body>
 </html>
